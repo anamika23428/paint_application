@@ -2,4 +2,5 @@
 
 Check out the video demonstration:
 
-[Watch the video]()
+[Watch the video](./path/to/your-video.mp4)
+
