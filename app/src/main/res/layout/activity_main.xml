@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/toolbar">
+
+         <ImageButton
+             android:id="@+id/redcolor"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_margin="10dp"
+             android:background="@drawable/redcolor"/>
+        <ImageButton
+            android:id="@+id/bluecolor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bluecolor"/>
+        <ImageButton
+            android:id="@+id/greencolor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/greencolor"/>
+
+        <ImageButton
+            android:id="@+id/blackcolor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/blackcolor"/>
+        <ImageButton
+            android:id="@+id/yellowcolor"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/yellowcolor"/>
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/paintview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/lowertoolbar">
+
+        <include layout="@layout/paintview" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/lowertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/lowertoolbar">
+        <ImageButton
+            android:id="@+id/penbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circularbtn"
+            android:src="@android:drawable/ic_menu_edit" />
+
+        <ImageButton
+            android:id="@+id/btndelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circularbtn"
+            android:src="@android:drawable/ic_menu_delete" />
+
+
+
+        <ImageButton
+            android:id="@+id/eraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/circularbtn"
+            android:src="@drawable/eraser2" />
+    </LinearLayout>
+
+
+</RelativeLayout>
